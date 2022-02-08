@@ -1,4 +1,4 @@
-const express = require('express');
+import express from 'express';
 const app = express();
 const bodyParser = require('body-parser');
 const port = 3001;
@@ -7,7 +7,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // import fake data
-const fakeData = require('./fakeToDo.json');
+const fakeData = require('../fakeToDo.json');
 
 app.get('/', (req, res) => {
   res.status(200).send('Hello 17-356 People!');
@@ -25,3 +25,5 @@ app.post('/addTodo', (req, res) => {
 app.listen(port, () => {
   console.log(`Todo-App listening on localhost:${port}`);
 });
+
+export {}
