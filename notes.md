@@ -17,4 +17,13 @@
 3. Change test script to run `jest` instead of default (in package.json)
 5. Create `helpers.ts` file for increased testability
 6. Write tests in `/tests/<filename>.test.ts`
-7. run `npm t`
+7. run `npm t` to run tests locally
+
+## Step 2: Set up Github Actions
+1. Go to your github repository
+2. Click on the "Actions" tab
+3. Select the "Node.js by Github Actions" preset and click "Configure"
+4. (recommend) Make sure you have the correct default workspace set!
+5. (recommend) Test a push to a tracked branch to see your CI in action.
+
+### NOTE: If confused, please refer to the reference codebase! The reference code has all of these steps implemented.
