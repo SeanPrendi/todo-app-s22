@@ -2,7 +2,7 @@ import getTodoData, { Todo } from '../helpers';
 
 test('gets well-formatted todo json object', () => {
   const data: Array<Todo> = getTodoData();
-  const testObj = data[1];
+  const testObj = data[0];
   expect(testObj).toBeDefined();
   expect(testObj).toHaveProperty('id');
   expect(testObj).toHaveProperty('task');
