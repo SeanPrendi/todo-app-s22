@@ -17,7 +17,7 @@
 3. Change test script to run `jest` instead of default (in package.json)
 5. Create `helpers.ts` file for increased testability
 6. Write tests in `/tests/<filename>.test.ts`
-7. run `npm t` to run tests locally
+7. run `npm test` to run tests locally
 
 ## Step 2: Set up Github Actions
 1. Go to your github repository
