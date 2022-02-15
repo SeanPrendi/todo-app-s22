@@ -14,12 +14,12 @@ To do this, we need to write the Docker files that Docker will use to build thes
 1. `cd` into the backend
 2. Create a new `Dockerfile` (if one doesn't already exist)
 3. Write the contents of the Dockerfile. (See reference code)
-4. Build the backend image with `docker build -t backend:latest`. Make sure you're in the backend folder when you run this!
+4. Build the backend image with `docker build . -t backend:latest`. Make sure you're in the backend folder when you run this!
 5. (optional) you can view your Docker images, including your new image, with the command `docker image ls` or through the Docker Desktop app.
 6. `cd` into the frontend
 7. Create another new `Dockerfile` (if one doesn't already exist)
 8. Write the contents of the Dockerfile. (see reference code)
-9. Build the frontend image with `docker build -t frontend:latest`. Again, make sure you're in the correct folder (ie. frontend).
+9. Build the frontend image with `docker build . -t frontend:latest`. Again, make sure you're in the correct folder (ie. frontend).
 
 We have successfully created two Docker images, congratulations! 
 
