@@ -1,4 +1,4 @@
-# Notes on Recitation 3: Testing
+# Notes on Recitation: Testing
 
 ## Step 0: Convert Backend to Typescript
 1. Convert index.js to index.ts
