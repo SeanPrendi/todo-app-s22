@@ -1,4 +1,4 @@
-FROM node:alpine3.11
+FROM gcr.io/google-appengine/nodejs
 
 # Create an application directory
 RUN mkdir -p /app
@@ -15,6 +15,7 @@ COPY . /app
 RUN npm install
 
 EXPOSE 3001
+EXPOSE 8080
 
 # run script to compile ts files
 RUN tsc -p .

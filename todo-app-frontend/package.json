@@ -2,7 +2,7 @@
   "name": "todo-app-frontend",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://todo-app-backend:3001",
+  "proxy": "https://todo-app-back-test.uk.r.appspot.com",
   "dependencies": {
     "@geist-ui/react": "^2.2.5",
     "@testing-library/jest-dom": "^5.16.1",

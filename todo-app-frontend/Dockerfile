@@ -1,9 +1,10 @@
-FROM node:alpine3.11
+FROM gcr.io/google-appengine/nodejs
 
 # Create an application directory
 RUN mkdir -p /app
 
 RUN npm install -g typescript
+RUN npm install -g serve
 
 # The /app directory should act as the main application directory
 WORKDIR /app
@@ -18,5 +19,6 @@ RUN npm install
 RUN npm run build
 
 EXPOSE 3000
+EXPOSE 8080
 
-CMD ["npm", "start"]
+CMD ["serve", "-s", "build"]
