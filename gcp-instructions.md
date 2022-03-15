@@ -8,6 +8,8 @@ Make sure you have dockerized your application first! If you haven't there are n
 1. Go to the GCP website and log in using your Google account. **For now, you will need to use a non-CMU account for this in order to have the permissions needed to create new projects.** (We're working on the permissions issue).
 2. Set up a Billing Account in order to allow yourself to deploy by navigating to the "Billing" section.
 
+NOTE: the CMU-provided credits seem to require an @andrew.cmu.edu email, which has permission issues as stated above. While you will be able to redeem credits on an @andrew.cmu.edu email, you won't be able to deploy anything because of the permissions. Therefore, please use a non-CMU email to sign up, and redeem the free $300 GCP credits they offer on signup. Here's a [link to how to redeem that](https://cloud.google.com/free/docs/gcp-free-tier/#free-trial).
+
 ## Step 1: Set up the GCP SDK and your GCP projects
 1. Download the [GCP SDK](https://cloud.google.com/sdk) for your local machine.
 2. Navigate to the App Engine page in the GCP console in your browser and create two new projects - one for the frontend and one for the backend. 
