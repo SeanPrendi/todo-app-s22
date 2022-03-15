@@ -2,6 +2,8 @@
 
 These steps describe how to deploy an application to GCP using GCP App Engine. We assume that the overall application mirrors our architecture - with separate applications for the frontend and backend.
 
+Make sure you have dockerized your application first! If you haven't there are notes in this repository (Docker-Nodes.md) which detail that process.
+
 ## Step 0: Set up your GCP account
 1. Go to the GCP website and log in using your Google account. **For now, you will need to use a non-CMU account for this in order to have the permissions needed to create new projects.** (We're working on the permissions issue).
 2. Set up a Billing Account in order to allow yourself to deploy by navigating to the "Billing" section.
