@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: todo-frontend
+      tier: frontend
+      track: stable
+  template:
+    metadata:
+      labels:
+        app: todo-frontend
+        tier: frontend
+        track: stable
+    spec:
+      containers:
+      - image: shaneaung/frontend:latest
+        imagePullPolicy: IfNotPresent
+        name: todo-frontend

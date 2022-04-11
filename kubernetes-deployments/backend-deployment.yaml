@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: todo-backend
+      tier: backend
+      track: stable
+  template:
+    metadata:
+      labels:
+        app: todo-backend
+        tier: backend
+        track: stable
+    spec:
+      containers:
+      - image: shaneaung/backend:latest
+        imagePullPolicy: IfNotPresent
+        name: todo-backend
+        ports:
+          - name: http
+            containerPort: 3001
