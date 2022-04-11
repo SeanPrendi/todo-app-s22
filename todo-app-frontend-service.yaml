@@ -15,5 +15,6 @@ spec:
       targetPort: 3000
   selector:
     io.kompose.service: todo-app-frontend
-status:
-  loadBalancer: {}
+  type: LoadBalancer
+# status:
+#   loadBalancer: {}
